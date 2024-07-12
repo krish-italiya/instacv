@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+# InstaCV
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-17.0.2-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.3.5-blue)
+![Redux](https://img.shields.io/badge/Redux-4.1.0-purple)
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [InstaCV](#instacv)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**InstaCV** is a web application that simplifies the process of creating professional resumes. Users can input their personal information, education, work experience, projects, and skills to generate a well-formatted resume. The application leverages modern frontend technologies to provide a seamless user experience.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- User-friendly interface for entering resume details
+- Real-time preview of the resume
+- Persistent state management using Redux and Redux Persist
+- Modular and scalable codebase
+- Responsive design for use on various devices
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technologies Used
+
+- React
+- TypeScript
+- Redux Toolkit
+- Redux Persist
+- React Router DOM
+- Tailwind CSS
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following software installed on your machine:
+
+- Node.js (>= 14.x)
+- npm (>= 6.x) or yarn (>= 1.x)
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/krish-italiya/instacv.git
+cd instacv
+npm install
