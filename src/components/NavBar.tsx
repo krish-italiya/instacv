@@ -4,7 +4,7 @@ import { RootState } from "../redux/store";
 
 const NavBar = () => {
   const isActive = useSelector((state: RootState) => state.persistedReducer.navbarFixed.value);
-  console.log("isActive Value: ", isActive);
+  const path = window.location.pathname
   const personalDetails = useSelector(
     (state: RootState) =>
       state.persistedReducer.personalDetailsSlice.personalDetails
@@ -17,7 +17,7 @@ const NavBar = () => {
             InstaCV
           </NavLink>
         </div>
-        {personalDetails.length > 1 && (
+        {(personalDetails.length>1 && path.substring(1)!=="dashboard") && (
           <div className="navbar-end">
             <NavLink className="btn" to={"/dashboard"}>
               My work!
