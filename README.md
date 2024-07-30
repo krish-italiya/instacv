@@ -26,7 +26,6 @@
 - Real-time preview of the resume
 - Persistent state management using Redux and Redux Persist
 - Modular and scalable codebase
-- Responsive design for use on various devices
 
 ## Technologies Used
 
